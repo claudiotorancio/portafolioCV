@@ -1,0 +1,28 @@
+
+
+{
+ 
+
+  "routes": [
+    {
+      "src": "/", "dest": "index.js"},
+    {
+      "src": "/product/users", "methods": ["POST"],"dest": "api/enrutador.js"},
+    {
+      "src": "/product/getbill","methods": ["POST"],"dest": "api/enrutador.js"},
+      {
+        "src": "/success",
+        "status": 301,
+        "headers": {
+          "Location": "/success.html"
+        }
+      },
+      {
+        "src": "/error",
+        "status": 307,
+        "headers": {
+          "Location": "/error.html"
+        }
+      }
+  ]
+}

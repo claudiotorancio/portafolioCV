@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="assets/curriculum-vitae-icon-2.jpg" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    
+    <title> Proyecto Final</title>
+</head>
+
+<body>
+    <div class="tudo">
+        <section class="menu">
+            <header class="menu__header">
+                <img src="assets\vector.png">
+                <h3 class="menu__title">Claudio Torancio</h3>
+            </header>
+            <nav>
+                <ul class="menu__list">
+                    <li class="menu__list__item"><a href="#sobre-mi">Sobre mi</a></li>
+                    <li class="menu__list__item"><a href="#skills">Skills</a></li>
+                    <li class="menu__list__item"><a href="#hobbies">Hobbies</a></li>
+                    <li class="menu__list__item"><a href="#formacion">Formación</a></li>
+                    <li class="menu__list__item"><a href="#xp">Proyectos</a></li>
+                    <li id="#form" class="menu__list__item"><a href="#contacto">claudiotorancio@gmail.com</a></li>
+                </ul>
+            </nav>
+        </section>
+
+        <script>
+            $(function () {
+                $('a[href*=#]:not([href=#])').click((event) => {
+                    const { pathname, hostname } = location;
+                    const target = $(event.currentTarget.hash);
+
+                    if (target.length && this.hash !== "") {
+                        $('html, body').animate({
+                            scrollTop: target.offset().top
+                        }, 1000);
+
+                        return false;
+                    }
+                });
+            });
+
+        </script>
+
+        <section class="title">
+            <div class="title__div">
+                <img class="title__profile" src="assets/foto_perfil.png">
+                <div class="title__container">
+                    <h2 class="title__bio">Hola, mi nombre es Claudio Torancio y diseño paginas web</h2>
+                    <h3 class="title__subsection">Tengo experiencia en herramientas de informatica y actualmente estoy
+                        participando del proyecto #SeProgramar</h3>
+                    <ul class="title__network">
+                        <li class="title__network__item"><a href="https://github.com/claudiotorancio">Github <img
+                                    src="assets\arrow.png"> </a></li>
+                        <li class="title__network__item"><a
+                                href="https://www.linkedin.com/in/claudio-torancio-764045235/">Linkedin <img
+                                    src="assets\arrow.png"></a></li>
+                        <li class="title__network__item"><a
+                                href="https://www.facebook.com/claudio.torancio/">Facebook<img
+                                    src="assets\arrow.png"></a></li>
+                        <li class="title__network__item"><a
+                                href="https://drive.google.com/file/d/15cKRvnxFpLL8xUj34fAfJZjjxs0bkzZ7/view?usp=sharing">Currículo
+                                <img src="assets\arrow.png"></a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section class="about" id="sobre-mi">
+            <div class="about__container">
+                <h3 class="about__title">Sobre mi</h3>
+                <p class="about__paragraph">En la actualidad ejerzo mi profesión como Tecnico Operador atendiendo
+                    equipos de refrigeracion y Tableros de Transferencia automatica (TTA) al servicio de Ericsson -
+                    Telefonica - Movistar Argentina. </p>
+                <p class="about__paragraph">Considero la tecnologia como herramienta fundamental para el desarrollo
+                    productivo de
+                    una sociedad, es por ello que dedico todo mi tiempo disponible para la capacitacion de nuevas formas
+                    de tecnologia que
+                    puedan ayudarme a lograr los objetivos emprendidos.</p>
+                <img src="assets\signature.png">
+            </div>
+        </section>
+
+        <section class="skills" id="skills">
+            <h3 class="skills__title">Skills</h3>
+            <div class="skills__line">
+                <div class="skills__box">
+                    <ul>
+                        <li class="skills__img"><img src="assets\htlm.png"></li>
+                        <li class="skills__name"> HTML 5</li>
+                    </ul>
+                </div>
+
+                <div class="skills__box">
+                    <ul>
+                        <li class="skills__img"> <img src="assets\js_icon.png" alt=""></li>
+                        <li class="skills__name">Javascript</li>
+                    </ul>
+                </div>
+
+                <div class="skills__box">
+                    <ul>
+                        <li class="skills__img"> <img src="assets\css_icon.png" alt=""> </li>
+                        <li class="skills__name">CSS</li>
+
+                    </ul>
+                </div>
+
+                <div class="skills__box">
+                    <ul>
+                        <li class="skills__img"><img src="assets/autodesk_icon.png" alt=""></li>
+                        <li class="skills__name">Autocad</li>
+                    </ul>
+                </div>
+
+                <div class="skills__box">
+                    <ul>
+                        <li class="skills__img"> <img src="assets/excel_icon.png" alt=""> </li>
+                        <li class="skills__name">Excel</li>
+                    </ul>
+                </div>
+
+                <div class="skills__box">
+                    <ul>
+                        <li class="skills__img"> <img src="assets/word_icon.png" alt=""></li>
+                        <li class="skills__name">Word</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="hobbies" id="hobbies">
+            <h3 class="hobbies__title">Hobbies</h3>
+            <div class="hobbies__line">
+                <div class="hobbies__box">
+                    <ul>
+                        <li class="hobbies__img"><img src="assets\futbol_icon.png"></li>
+                        <li class="hobbies__name"> Futbol</li>
+                    </ul>
+                </div>
+
+                <div class="hobbies__box">
+                    <ul>
+                        <li class="hobbies__img"> <img src="assets\canto_icon.png" alt=""></li>
+                        <li class="hobbies__name">Cantar</li>
+                    </ul>
+                </div>
+
+                <div class="hobbies__box">
+                    <ul>
+                        <li class="hobbies__img"> <img src="assets\headphones_icon.png" alt=""></li>
+                        <li class="hobbies__name">Oir música</li>
+                    </ul>
+                </div>
+
+                <div class="hobbies__box">
+                    <ul>
+                        <li class="hobbies__img"><img src="assets\tv_icon.png" alt=""></li>
+                        <li class="hobbies__name">Ver séries</li>
+                    </ul>
+                </div>
+
+                <div class="hobbies__box">
+                    <ul>
+                        <li class="hobbies__img"> <img src="assets\forkspoon_icon.png" alt=""> </li>
+                        <li class="hobbies__name">Cocinar</li>
+                    </ul>
+                </div>
+
+                <div class="hobbies__box">
+                    <ul>
+                        <li class="hobbies__img"> <img src="assets\camera_icon.png" alt=""> </li>
+                        <li class="hobbies__name">Tomar fotos</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="academic" id="formacion">
+            <h2 class="academic__title">Formación académica</h2>
+            <div class="academic__courses">
+                <div class="academic__courses__box">
+                    <ul class="academic__courses__list">
+                        <li class="academic__courses__item__img"><img src="assets/autocad.png"></li>
+                        <li class="academic__courses__item__title">
+                            <h4>Curso intensivo de Autocad y CivilCad 3d</h4>
+                        </li>
+                        <li class="academic__courses__item__subtitle">
+                            <p>2018</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="academic__courses__box">
+                    <ul class="academic__courses__list">
+                        <li class="academic__courses__item__img"><img src="assets\alura_logo.png"></li>
+                        <li class="academic__courses__item__title">
+                            <h4>Formación en principiante de programación</h4>
+                        </li>
+                        <li class="academic__courses__item__subtitle">
+                            <p>2022</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="academic__courses__box">
+                    <ul class="academic__courses__list">
+                        <li class="academic__courses__item__img"><img src="assets/ArgPrograma.jpg"></li>
+                        <li class="academic__courses__item__title">
+                            <h4>Programacion</h4>
+                        </li>
+                        <li class="academic__courses__item__subtitle">
+                            <p>En curso </p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section class="experience" id="xp">
+            <h2 class="experience__section__title">Experiencia Profesional</h2>
+
+
+            <div class="experience__box">
+                <img class="experience__img" src="assets/deodificador.png">
+                <div class="experience__info">
+                    <h2 class="experience__title">Encriptador de texto</h2>
+                    <h3 class="experience__text">Challenge Oracle </h3>
+                    <div class="experience__description">
+                        <span class="experience__repo"><a href="https://github.com/claudiotorancio/Encriptador"><button
+                                    class="experiencia__botao--repo">Repositório</button></a></span>
+                        <span class="experience__demo"><a href="https://claudiotorancio.github.io/Encriptador/"><button
+                                    class="experience__botao--demo">Ver demo</button></a></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="experience__box1">
+                <img class="experience__img" src="assets\forca_print.png">
+                <div class="experience__info">
+                    <h2 class="experience__title">Juego creado con HTML, CSS y JavaScript</h2>
+                    <h3 class="experience__text">Challenge Oracle </h3>
+                    <div class="experience__description">
+                        <span class="experience__repo"><a href="https://github.com/claudiotorancio/Ahorcado"><button
+                                    class="experiencia__botao--repo">Repositório</button></a></span>
+                        <span class="experience__demo"><a
+                                href="https://claudiotorancio.github.io/Ahorcado/index.html"><button
+                                    class="experience__botao--demo">Ver demo</button></a></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="experience__box">
+                <img class="experience__img" src="assets/Alurageek.png">
+                <div class="experience__info">
+                    <h2 class="experience__title">Pagina para ver productos y editarlos por medio de Json</h2>
+                    <h3 class="experience__text">Challenge Oracle </h3>
+                    <div class="experience__description">
+                        <span class="experience__repo"><a href="https://github.com/claudiotorancio/AluraGeek"><button
+                                    class="experiencia__botao--repo">Repositório</button></a></span>
+                        <span class="experience__demo"><a href="https://claudiotorancio.github.io/AluraGeek/"><button
+                                    class="experience__botao--demo">Ver demo</button></a></span>
+                    </div>
+                </div>
+            </div>
+
+            <section class="formcontato" id="contacto">
+                <div class="formcontato__contacto">
+                    <div class="formcontato--esquerda">
+                        <img class="formcontato__img" src="assets\contact_image.png">
+                    </div>
+                    <div class="formcontato__text">
+                        <h2 class="formcontato__title">Contacto</h2>
+                        <h3 class="formcontato__subtext">¿Quieres contactarme?</h3>
+                        <h3 class="formcontato__subtext">Complete el siguiente formulario y me pondré en contacto con
+                            usted de forma breve. </h3>
+
+                        <form id="form" class="formcontato__form" name="form" action="/product/users" method="POST">
+                            <input class="nombre" type="text" name="nombre" placeholder="Nombre" required>
+                            <input class="email" type="email" name="email" required
+                                pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
+                                title="debe coincidir con el formato 'usuario@correo.com" placeholder="e-mail">
+                            <input class="asunto" type="text" name="asunto" placeholder="Asunto" required>
+                            <textarea pattern=".{30,}" title="debe contener al menos 30 palabras" type="text"
+                                class="formcontato__textarea" rows="5" cols="40" name="mensaje" placeholder="mensaje"
+                                required></textarea>
+                            <button type="submit" id=""  class="formcontato__botao"
+                                action="javascript:void(0)">
+                                Enviar mensaje
+                            </button>
+                            <span id="success-message" style="display:none;">¡Mensaje enviado!</span>
+                        </form>
+                        
+
+                        <a href="#" class="btn-back-to-top"><i class="fa fa-arrow-up"></i></a>
+                        <script>
+                            // Selecciona el botón
+                            var btnBackToTop = document.querySelector('.btn-back-to-top');
+
+                            // Agrega un evento de desplazamiento para el botón
+                            window.addEventListener('scroll', function () {
+                                if (window.pageYOffset > 100) {
+                                    // Muestra el botón si el usuario se desplaza hacia abajo
+                                    btnBackToTop.style.display = 'block';
+                                } else {
+                                    // Oculta el botón si el usuario se desplaza hacia arriba
+                                    btnBackToTop.style.display = 'none';
+                                }
+                            });
+
+                            // Agrega un evento de clic para el botón
+                            btnBackToTop.addEventListener('click', function (e) {
+                                e.preventDefault();
+                                // Desplaza la página hacia arriba
+                                window.scrollTo(0, 0);
+                            });
+
+                        </script>
+
+            </section>
+
+            <section class="footer">
+                <div class="footer__rodape">
+                    <p>Desarrollado por Claudio Torancio</p>
+                    <p>2023</p>
+                </div>
+            </section>
+    </div>
+
+
+</body>
+
+</html>
