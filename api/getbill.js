@@ -1,7 +1,7 @@
 //api/getbill
 
 const nodemailer = require('nodemailer')
-//const Mailgen = require('mailgen');
+const Mailgen = require('mailgen');
 require('dotenv').config();
 
 /**enviar correos desde cuenta gmail  */
@@ -13,8 +13,8 @@ const getbill = (req, res) => {
   let config = {
       service: 'gmail',
       auth: {
-          user: process.env.EMAIL,
-          pass: process.env.AWS_ACCESS_KEY_ID
+          user: config.EMAIL,
+          pass: config.AWS_ACCESS_KEY_ID
       }
   }
   let transporter = nodemailer.createTransport(config)
@@ -45,7 +45,7 @@ const getbill = (req, res) => {
   let mail = MailGenerator.generate(response)
 
   let message = {
-      from: process.env.EMAIL,
+      from: config.EMAIL,
       to: userEmail,
       subject: "Place Order",
       html: mail

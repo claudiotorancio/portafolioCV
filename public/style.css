@@ -249,7 +249,7 @@ section.academic {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    align-items: flex-start;
+  
     padding: 1rem;
 
 
@@ -440,13 +440,13 @@ section.formcontato div.formcontato__contacto {
 
     display: flex;
 
-    padding: 8rem 9rem;
+    padding: 8rem 20rem;
 }
 
 section.formcontato div img.formcontato__img {
 
     width: 24rem;
-    height: 37rem;
+    height: 38rem;
 
 }
 
@@ -501,43 +501,44 @@ form.formcontato__form button.formcontato__botao {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    
-  }
-  
-  .registry-card__icon-complete {
+
+}
+
+.registry-card__icon-complete {
     display: block;
     width: 3.5rem;
     height: 3.5rem;
-  
+
     margin-bottom: 1rem;
-  
+
     background-image: url(assets/checkmark.svg);
     background-size: cover;
     background-repeat: no-repeat;
-    
-  }
 
-  .registry-card__icon-complete-denied{
+}
+
+.registry-card__icon-complete-denied {
     display: block;
     width: 3.5rem;
     height: 3.5rem;
-  
+
     margin-bottom: 1rem;
-  
+
     background-image: url(assets/denied.svg);
     background-size: cover;
     background-repeat: no-repeat;
-    
-    
-  }
-  
-  .registry-card__title {
+
+
+}
+
+.registry-card__title {
     max-width: 20rem;
-  
-  }
-  .button {
+
+}
+
+.button {
     display: block;
-    background-color:  #0071ea;
+    background-color: #0071ea;
     border-radius: 7px;
     width: 100%;
     margin-top: 1rem;
@@ -548,9 +549,9 @@ form.formcontato__form button.formcontato__botao {
     font-size: 22px;
     align-self: center;
     text-align: center;
-  }
+}
 
-  .btn-back-to-top {
+.btn-back-to-top {
     position: fixed;
     bottom: 20px;
     right: 20px;
@@ -563,18 +564,15 @@ form.formcontato__form button.formcontato__botao {
     text-align: center;
     border-radius: 50%;
     font-size: 24px;
-  }
-  
-  .btn-back-to-top:hover {
+}
+
+.btn-back-to-top:hover {
     background: #fff;
     color: #000;
     text-decoration: none;
-  }
-  
+}
 
 
-  
-  
 /*footeer*/
 
 section.footer {
@@ -591,49 +589,10 @@ section.footer {
         margin: 0;
     }
 
-
     section.title {
-        margin: 0;
-    }
-
-
-
-
-
-    section.title div.title__container {
-
-        width: 500px;
-
-    }
-
-    section.title div.title__container h2 {
-
-
-        font-size: 2.3rem;
-        text-align: center;
-
-
-
-    }
-
-    section.title div.title__container h3 {
-
-        text-align: center;
-
-
-
-
-    }
-
-    section.title div.title__div div.title__container ul.title__network {
-
+        width: 100%;
         margin-left: 0;
-        padding-left: 0;
-
-    }
-
-    section.title div.title__div img.title__profile {
-        display: none;
+      
 
     }
 
@@ -644,38 +603,86 @@ section.footer {
     }
 
 
-section.academic {
-    align-items: center;
-}
+    section.title div.title__div {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+    }
 
-section.academic div.academic__courses {
+    section.title div.title__container {
+        
+        width: 400px;
+        
+    }
 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-}
+    section.title div.title__container h2 {
+        font-size: 2.3rem;
+        text-align: center;
+    }
 
-section.experience div.experience__box {
+    section.title div.title__container h3 {
+        text-align: center;
+    }
 
-    display: flex;
-    flex-direction: column;
+    section.title div.title__div div.title__container ul.title__network {
+        width: 100%;
+        margin-left: 0;
+        padding-left: 0;
+    }
 
-}
+    section.title div.title__div img.title__profile {
+        flex-direction: row-reverse;
+        
+       
+    }
 
-section.experience div.experience__box1 {
+    section.about h3.about__title {
+        font-size: 2rem;
+        text-align: center;
+    }
 
-    display: flex;
-    flex-direction: column;
+    section.about div.about__container {
+        width: 100%;
+        margin-left:0;
+        margin-bottom: 2rem;
+    }
+    
 
-}
+    section.academic {
+        align-items: center;
+    }
 
-section.formcontato div.formcontato__contacto {
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    padding: 8rem 9rem;
-}
+    section.academic div.academic__courses {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    section.experience div.experience__box {
+
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    section.experience div.experience__box1 {
+
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    section.formcontato div.formcontato__contacto {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        padding: 8rem 9rem;
+    }
+
+    section.formcontato div.formcontato__text {
+        margin-left: 0rem;
+    }
 
 
 }
@@ -683,40 +690,53 @@ section.formcontato div.formcontato__contacto {
 
 @media (min-width:320px) and (max-width:768px) {
 
+    header.menu__header {
 
+        display: none;
+    
+    }
 
+    
+    
 
     section.menu {
-        display: none;
-
-
-
+      width: 100%;
+       padding: 0;
+       display: contents;
+       
+      
+        
     }
 
     section.title {
-        margin-left: 10px;
-        background-image: url(./assets/foto_perfil.png);
-        background-repeat: no-repeat;
-        width: 380px;
-        padding-top: 350px;
-
-
+        display: contents;
+        margin-left: 0;
+   
     }
 
+    section.title div.title__div {
+        width: 100%;
+        display: block;
+      
+    }
+
+
     section.title div.title__div div.title__container {
-        width: 380px;
+        width: 100%;
         text-align: center;
     }
 
     section.title div.title__div div.title__container ul.title__network {
-        width: 380px;
+        width: 100%;
         margin-left: 0;
         padding-left: 0;
 
     }
 
     section.title div.title__div img.title__profile {
-        display: none;
+        width: 100%;
+      align-content: center;
+       
 
     }
 
@@ -729,9 +749,14 @@ section.formcontato div.formcontato__contacto {
     }
 
     section.menu nav ul.menu__list {
+      width: 100%;
+      margin-left: 0;
+      justify-content: space-around;
+      padding: 0;
 
-        display: flex;
-        flex-direction: column;
+  
+       
+        
 
     }
 
@@ -823,6 +848,11 @@ section.formcontato div.formcontato__contacto {
         display: flex;
         flex-direction: column;
         padding: 8rem 9rem;
+    }
+    section.formcontato div.formcontato__text {
+
+        margin-left: 0;
+    
     }
 
 

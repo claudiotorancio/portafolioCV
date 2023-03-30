@@ -1,8 +1,10 @@
 //api/users
 //const path = require('path')
 const nodemailer = require('nodemailer')
+const config = require('../config')
 //const Mailgen = require('mailgen');
 require('dotenv').config();
+
 
 
 /** enviar correos de prueba */
@@ -25,8 +27,8 @@ const users = async (req, res) => {
         port: 465,
         secure: true, // true for 465, false for other ports
         auth: {
-            user: process.env.EMAIL, // generated ethereal user
-            pass: process.env.AWS_ACCESS_KEY_ID, // generated ethereal password
+            user: config.EMAIL, // generated ethereal user
+            pass: config.AWS_ACCESS_KEY_ID, // generated ethereal password
 
         },
         tls: {
@@ -35,7 +37,7 @@ const users = async (req, res) => {
     });
     let message = {
         from: '"Claudio Torancio" <foo@example.com>', // sender address
-        to: process.env.EMAIL, // list of receivers
+        to: config.EMAIL, // list of receivers
         subject: `website contact form`, // Subject line
         text: "hello world", // plain text body
         html: contentHTML, // html body
