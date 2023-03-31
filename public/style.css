@@ -116,7 +116,7 @@ section.title div.title__container h2 {
 section.title div.title__div div.title__container ul {
     display: flex;
     justify-content: space-between;
-
+    margin-top: 4rem;
 
     width: 31.25rem;
     font-style: normal;
@@ -282,7 +282,8 @@ section.academic div.academic__courses__box {
 section.academic div.academic__courses__box ul {
     margin: 0rem;
     padding: 0rem;
-    width: 25rem
+    width: 25rem;
+   
 }
 
 section.academic div.academic__courses__box ul li {
@@ -484,7 +485,6 @@ form.formcontato__form textarea.formcontato__textarea {
     border: none;
     height: 7rem;
     margin-bottom: 1.5rem;
-
 }
 
 form.formcontato__form button.formcontato__botao {
@@ -496,21 +496,20 @@ form.formcontato__form button.formcontato__botao {
     color: white;
 }
 
+/*paginas success y error*/
+
 .registry-card {
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
-
 }
 
 .registry-card__icon-complete {
     display: block;
     width: 3.5rem;
     height: 3.5rem;
-
     margin-bottom: 1rem;
-
     background-image: url(assets/checkmark.svg);
     background-size: cover;
     background-repeat: no-repeat;
@@ -521,19 +520,14 @@ form.formcontato__form button.formcontato__botao {
     display: block;
     width: 3.5rem;
     height: 3.5rem;
-
     margin-bottom: 1rem;
-
     background-image: url(assets/denied.svg);
     background-size: cover;
     background-repeat: no-repeat;
-
-
 }
 
 .registry-card__title {
     max-width: 20rem;
-
 }
 
 .button {
@@ -582,9 +576,8 @@ section.footer {
 /*RESPONSIVO*/
 
 @media (min-width:768px) and (max-width:1200px) {
+
     /*Sección Menu*/
-
-
     section.menu {
         margin: 0;
     }
@@ -592,8 +585,6 @@ section.footer {
     section.title {
         width: 100%;
         margin-left: 0;
-      
-
     }
 
     section.menu nav ul.menu__list {
@@ -602,17 +593,14 @@ section.footer {
         font-size: 15px;
     }
 
-
     section.title div.title__div {
         display: flex;
         flex-direction: row-reverse;
         justify-content: space-between;
     }
 
-    section.title div.title__container {
-        
+    section.title div.title__container { 
         width: 400px;
-        
     }
 
     section.title div.title__container h2 {
@@ -632,8 +620,6 @@ section.footer {
 
     section.title div.title__div img.title__profile {
         flex-direction: row-reverse;
-        
-       
     }
 
     section.about h3.about__title {
@@ -667,10 +653,8 @@ section.footer {
     }
 
     section.experience div.experience__box1 {
-
         display: flex;
         flex-direction: column;
-
     }
 
     section.formcontato div.formcontato__contacto {
@@ -684,6 +668,9 @@ section.footer {
         margin-left: 0rem;
     }
 
+    section.about {
+        text-align: center;
+    }
 
 }
 
@@ -691,33 +678,24 @@ section.footer {
 @media (min-width:320px) and (max-width:768px) {
 
     header.menu__header {
-
         display: none;
-    
     }
-
-    
-    
 
     section.menu {
       width: 100%;
        padding: 0;
        display: contents;
-       
       
-        
     }
 
     section.title {
         display: contents;
         margin-left: 0;
-   
     }
 
     section.title div.title__div {
         width: 100%;
         display: block;
-      
     }
 
 
@@ -730,18 +708,14 @@ section.footer {
         width: 100%;
         margin-left: 0;
         padding-left: 0;
-
     }
 
     section.title div.title__div img.title__profile {
         width: 100%;
       align-content: center;
-       
-
     }
 
     section.about div.about__container {
-
         width: 100%;
         margin-left: 0;
         margin-bottom: 2rem;
@@ -753,11 +727,7 @@ section.footer {
       margin-left: 0;
       justify-content: space-around;
       padding: 0;
-
-  
-       
-        
-
+      margin-top: 2rem;
     }
 
     section.skills {
@@ -775,9 +745,7 @@ section.footer {
     }
 
     section.skills div.skills__line {
-
         width: 300px;
-
     }
 
     section.hobbies div.hobbies__line {
@@ -789,7 +757,6 @@ section.footer {
     }
 
     section.academic div.academic__courses {
-
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -802,8 +769,6 @@ section.footer {
 
     section.title div.title__container h2 {
         font-size: 2rem;
-
-
     }
 
     section.title div.title__container h2.academic__title {
@@ -816,17 +781,12 @@ section.footer {
         flex-direction: column;
         width: 400PX;
         align-content: center;
-
     }
 
     div.experience__box div.experience__info {
 
         padding: 2rem;
-
     }
-
-
-
 
     section.experience div.experience__box1 {
         margin-left: 0;
@@ -834,13 +794,10 @@ section.footer {
         flex-direction: column;
         width: 400PX;
         align-content: center;
-
     }
 
     div.experience__box1 div.experience__info {
-
         padding: 2rem;
-
     }
 
     section.formcontato div.formcontato__contacto {
@@ -849,11 +806,9 @@ section.footer {
         flex-direction: column;
         padding: 8rem 9rem;
     }
+
     section.formcontato div.formcontato__text {
-
         margin-left: 0;
-    
     }
-
 
 }
