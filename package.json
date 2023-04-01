@@ -20,12 +20,14 @@
   "dependencies": {
     "@now/node-server": "^0.8.2",
     "@vercel/node": "^2.10.0",
+    "axios": "^1.3.4",
     "client": "^0.0.1",
     "cors": "^2.8.5",
     "dotenv": "^16.0.3",
     "express": "^4.18.2",
     "hawk": "^9.0.1",
     "hoek": "^6.1.3",
+    "http-proxy": "^1.18.1",
     "mailgen": "^2.0.27",
     "nodemailer": "^6.9.1",
     "prefix": "^1.0.0"

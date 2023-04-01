@@ -79,69 +79,118 @@ section.menu nav ul.menu__list {
 /*Sección Title*/
 
 section.title {
+position: relative;
+z-index: 1;
 
-    width: 80%;
-    color: var(--color-titulos);
-
+display: flex;
+height: 26rem;
 }
-
-section.title div.title__div {
-
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: space-between;
-
-
-
+section.title::before {
+   
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(./assets/img-programacion.jpg);
+    background-size: 100%;
+    filter: brightness(40%); 
+    background-repeat: no-repeat;
+    z-index: -1;
 }
 
 /*titulo ppal*/
-section.title {
-    margin-left: 9rem;
+
+
+section.title div.title__div {
+   
 }
 
 
-section.title div.title__container h2 {
+/*imagen de perfil*/
+section.title div.title__div img.title__profile {
+   
+}
+
+/*container link redes sociales*/
+
+
+section.title  div.title__container {
+    width: 100%;
+}
+
+section.title div.title__container h2.title__bio {
+
+    margin-top: 2rem;
+    margin-bottom: 3rem;
     display: flex;
-
-
+    margin-left: 9rem;
+    width: 50%;
     font-size: 2.8rem;
     font-weight: 700;
     line-height: 3.5rem;
+    color: #fff;
+
 
 }
 
-/*imagen de perfil*/
-/*container link redes sociales*/
-section.title div.title__div div.title__container ul {
+section.title  div.title__container h3.title__subsection {
+    width: 50%;
+    color: #fff;
+    margin-left: 9rem;
+  
+
+}
+section.title  div.title__container ul.title__network {
     display: flex;
     justify-content: space-between;
     margin-top: 4rem;
-
+    margin-left: 6.5rem;
     width: 31.25rem;
     font-style: normal;
     line-height: 1rem;
+    color: #fff;
+}
 
+section.title  div.title__container ul.title__network li.title__network__item {
+    display: block;
+    border-radius: 7px;
+    padding: 1.125rem;
+    color: #fff;
+    text-align: center;
+    border: double;
+
+}
+
+
+section.title  div.title__container ul.title__network li.title__network__item a {
+    color: #fff;
+}
+
+section.title  div.title__container ul.title__network li.title__network__item a img {
+    background-color: #fff;
 }
 
 /*Sección About*/
 
 section.about {
-
+    display: flex;
+    justify-content: center;
     background-color: var(--color-fondo-azul);
 }
 
+
 /*Container Sección About*/
 section.about div.about__container {
+    text-align: center;
     width: 50%;
-    margin-left: 9rem;
-    margin-bottom: 2rem;
-
+    margin-bottom: 3rem;
 }
 
 section.about h3.about__title {
     font-size: 2rem;
-
 }
 
 /*textos seccion about*/
@@ -249,7 +298,7 @@ section.academic {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-  
+
     padding: 1rem;
 
 
@@ -283,7 +332,7 @@ section.academic div.academic__courses__box ul {
     margin: 0rem;
     padding: 0rem;
     width: 25rem;
-   
+
 }
 
 section.academic div.academic__courses__box ul li {
@@ -299,6 +348,13 @@ div.academic__courses__box ul li.academic__courses__item__img {
     background-color: var(--color-cajas);
     padding: 30%;
 
+}
+
+div.academic__courses__box ul li.academic__courses__item__title{
+    justify-content: center;
+}
+div.academic__courses__box ul li.academic__courses__item__subtitle{
+    justify-content: center;
 }
 
 /* experiencia*/
@@ -582,10 +638,7 @@ section.footer {
         margin: 0;
     }
 
-    section.title {
-        width: 100%;
-        margin-left: 0;
-    }
+ 
 
     section.menu nav ul.menu__list {
         margin-left: 5rem;
@@ -593,34 +646,98 @@ section.footer {
         font-size: 15px;
     }
 
-    section.title div.title__div {
+    section.title {
+        position: relative;
+        z-index: 1;
+        
         display: flex;
-        flex-direction: row-reverse;
-        justify-content: space-between;
-    }
+        height: 26rem;
+        
+        }
+        section.title::before {
+           
+            content: '';
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url(./assets/img-programacion.jpg);
+            background-size:cover;
+            filter: brightness(40%); 
+            background-repeat: no-repeat;
+            z-index: -1;
+          
+        }
 
-    section.title div.title__container { 
-        width: 400px;
-    }
+   
 
-    section.title div.title__container h2 {
-        font-size: 2.3rem;
-        text-align: center;
-    }
-
-    section.title div.title__container h3 {
-        text-align: center;
-    }
-
-    section.title div.title__div div.title__container ul.title__network {
+    section.title div.title__container {
+      
         width: 100%;
-        margin-left: 0;
-        padding-left: 0;
+        padding: 1rem 1rem 1rem 1rem;
+        
     }
 
-    section.title div.title__div img.title__profile {
-        flex-direction: row-reverse;
+    section.title div.title__container h2.title__bio {
+        
+        margin-left: 0;
+        margin-top: 2rem;
+        margin-bottom: 3rem;
+    text-align: center;
+        
+        width: 100%;
+        font-size: 2rem;
+        font-weight:0px;
+        line-height: 2rem;
+        color: #fff;
+    
+    
     }
+
+    section.title  div.title__container h3.title__subsection {
+            width: 100%;
+            color: #fff;
+            margin-left:0rem;
+            text-align: center;
+           
+          
+        
+        }
+        section.title  div.title__container ul.title__network {
+            display: flex;
+            justify-content:ce;
+            margin-top: 4rem;
+            margin-left: 2.5rem;
+            width: 80%;
+            font-style: normal;
+            line-height: 0.8rem;
+            color: #fff;
+          
+           
+        }
+        
+        section.title  div.title__container ul.title__network li.title__network__item {
+            display: block;
+            border-radius: 7px;
+            padding: 1.5rem;
+            color: #fff;
+            text-align: center;
+            border: double;
+            justify-content: center;
+            margin: 0.5rem 0.5rem 0.5rem 0.5rem;
+        
+        }
+        
+        
+        section.title  div.title__container ul.title__network li.title__network__item a {
+            color: #fff;
+            font-size: 0.8rem;
+           
+        }
+
+    
 
     section.about h3.about__title {
         font-size: 2rem;
@@ -629,10 +746,10 @@ section.footer {
 
     section.about div.about__container {
         width: 100%;
-        margin-left:0;
+        margin-left: 0;
         margin-bottom: 2rem;
     }
-    
+
 
     section.academic {
         align-items: center;
@@ -682,38 +799,99 @@ section.footer {
     }
 
     section.menu {
-      width: 100%;
-       padding: 0;
-       display: contents;
-      
+        width: 100%;
+        padding: 0;
+        display: contents;
+
     }
 
     section.title {
-        display: contents;
-        margin-left: 0;
-    }
+        position: relative;
+        z-index: 1;
+        
+        display: flex;
+        height: 26rem;
+        
+        }
+        section.title::before {
+           
+            content: '';
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url(./assets/img-programacion.jpg);
+            background-size:cover;
+            filter: brightness(40%); 
+            background-repeat: no-repeat;
+            z-index: -1;
+          
+        }
 
-    section.title div.title__div {
-        width: 100%;
-        display: block;
-    }
+        section.title  div.title__container {
+           
+            width: 100%;
+            padding: 1rem 1rem 1rem 1rem;
+            
+        }
 
-
-    section.title div.title__div div.title__container {
-        width: 100%;
+        section.title div.title__container h2.title__bio {
+        
+            margin-left: 0;
+            margin-top: 2rem;
+            margin-bottom: 3rem;
         text-align: center;
-    }
-
-    section.title div.title__div div.title__container ul.title__network {
-        width: 100%;
-        margin-left: 0;
-        padding-left: 0;
-    }
-
-    section.title div.title__div img.title__profile {
-        width: 100%;
-      align-content: center;
-    }
+            
+            width: 100%;
+            font-size: 2rem;
+            font-weight:0px;
+            line-height: 2rem;
+            color: #fff;
+        
+        
+        }
+        
+        section.title  div.title__container h3.title__subsection {
+            width: 100%;
+            color: #fff;
+            margin-left:0rem;
+            text-align: center;
+           
+          
+        
+        }
+        section.title  div.title__container ul.title__network {
+            display: flex;
+            justify-content:ce;
+            margin-top: 4rem;
+            margin-left: 0rem;
+            width: 80%;
+            font-style: normal;
+            line-height: 0.8rem;
+            color: #fff;
+          
+           
+        }
+        
+        section.title  div.title__container ul.title__network li.title__network__item {
+            display: flex;
+            border-radius: 7px;
+            padding: 0.8rem;
+            color: #fff;
+            text-align: center;
+            border: none;
+            justify-content: center;
+        
+        }
+        
+        
+        section.title  div.title__container ul.title__network li.title__network__item a {
+            color: #fff;
+            font-size: 0.8rem;
+           
+        }
 
     section.about div.about__container {
         width: 100%;
@@ -723,11 +901,11 @@ section.footer {
     }
 
     section.menu nav ul.menu__list {
-      width: 100%;
-      margin-left: 0;
-      justify-content: space-around;
-      padding: 0;
-      margin-top: 2rem;
+        width: 100%;
+        margin-left: 0;
+        justify-content: space-around;
+        padding: 0;
+        margin-top: 2rem;
     }
 
     section.skills {
@@ -763,13 +941,7 @@ section.footer {
         text-align: center;
     }
 
-    section.title div.title__container h3 {
-        display: none;
-    }
-
-    section.title div.title__container h2 {
-        font-size: 2rem;
-    }
+   
 
     section.title div.title__container h2.academic__title {
         text-align: center;
@@ -801,10 +973,13 @@ section.footer {
     }
 
     section.formcontato div.formcontato__contacto {
-        align-items: center;
-        display: flex;
+        
         flex-direction: column;
-        padding: 8rem 9rem;
+        padding: 0rem 1rem 0rem 1rem;
+    }
+    section.formcontato div.formcontato__contacto div.formcontato--esquerda img.formcontato__img{
+width: 100%;
+      
     }
 
     section.formcontato div.formcontato__text {
