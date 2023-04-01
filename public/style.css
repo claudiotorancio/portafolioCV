@@ -45,6 +45,7 @@ section.menu {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    font-size: 1.5rem;
 
 
 
@@ -202,8 +203,9 @@ section.about div.about__container p {
 
 /*Seccion Skills tamaño*/
 section.skills {
+    
     margin: 4rem 9rem;
-
+   
 }
 
 /*Titulo de la Seccion*/
@@ -223,6 +225,8 @@ section.skills div.skills__line {
 
 /*Cajas Skills*/
 section.skills div.skills__box {
+    border-radius: 1rem;
+box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -269,6 +273,9 @@ section.hobbies div.hobbies__line {
 
 /*Cajas Skills*/
 section.hobbies div.hobbies__box {
+    border-radius: 1rem;
+box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -316,6 +323,7 @@ section.academic h2.academic__title {
 
 /* Posicion de la seccion*/
 section.academic div.academic__courses {
+    
     width: 100%;
     display: flex;
     justify-content: space-around;
@@ -329,6 +337,7 @@ section.academic div.academic__courses__box {
 }
 
 section.academic div.academic__courses__box ul {
+    
     margin: 0rem;
     padding: 0rem;
     width: 25rem;
@@ -376,10 +385,17 @@ section.experience div.experience__box {
 
 
 section.experience div.experience__box img.experience__img {
-
+border-radius: 1rem;
+box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
     margin: 1.5rem;
 
 }
+section.experience div.experience__box1 img.experience__img {
+    border-radius: 1rem;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+        margin: 1.5rem;
+    
+    }
 
 div.experience__box div.experience__info {
 
@@ -802,6 +818,7 @@ section.footer {
         width: 100%;
         padding: 0;
         display: contents;
+        font-size: 1rem;
 
     }
 
