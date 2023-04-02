@@ -564,7 +564,7 @@ form.formcontato__form button.formcontato__botao {
 
 /*boton volver al principio*/
 
-.btn-back-to-top {
+.btn-volver {
     position: fixed;
     bottom: 20px;
     right: 20px;
@@ -579,7 +579,7 @@ form.formcontato__form button.formcontato__botao {
     font-size: 24px;
 }
 
-.btn-back-to-top:hover {
+.btn-volver:hover {
     background: #fff;
     color: #000;
     text-decoration: none;
