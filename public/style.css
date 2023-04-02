@@ -6,15 +6,12 @@
     --color-fondo-azul: #eaf2fd;
     --color-cajas: #fbfbfb;
     --azul-botones: #2a7ae4;
-
 }
 
 body {
     box-sizing: border-box;
     background-color: var(--cor-de-fundo);
     font-family: 'Raleway';
-
-
 }
 
 ol,
@@ -32,11 +29,7 @@ html {
     font-size: 16px;
 }
 
-
-
-
 /*Sección Menu*/
-
 
 section.menu {
     margin-left: 9rem;
@@ -46,28 +39,18 @@ section.menu {
     justify-content: space-between;
     align-items: center;
     font-size: 1.5rem;
-
-
-
 }
 
 /*Cabecera y espacios*/
 header.menu__header {
-
     display: flex;
-
     font-weight: 700;
     color: var(--color-titulos);
-
-
 }
 
 /*Items del Menu*/
 
-
-
 section.menu nav ul.menu__list {
-
     display: flex;
     justify-content: space-between;
     width: 45rem;
@@ -75,19 +58,16 @@ section.menu nav ul.menu__list {
     margin-left: 10rem;
 }
 
-/*Stylo para email nav*/
-
 /*Sección Title*/
 
 section.title {
-position: relative;
-z-index: 1;
-
-display: flex;
-height: 26rem;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    height: 26rem;
 }
+
 section.title::before {
-   
     content: '';
     display: block;
     position: absolute;
@@ -97,33 +77,18 @@ section.title::before {
     height: 100%;
     background-image: url(./assets/img-programacion.jpg);
     background-size: 100%;
-    filter: brightness(40%); 
+    filter: brightness(40%);
     background-repeat: no-repeat;
     z-index: -1;
 }
 
-/*titulo ppal*/
-
-
-section.title div.title__div {
-   
-}
-
-
-/*imagen de perfil*/
-section.title div.title__div img.title__profile {
-   
-}
-
 /*container link redes sociales*/
 
-
-section.title  div.title__container {
+section.title div.title__container {
     width: 100%;
 }
 
 section.title div.title__container h2.title__bio {
-
     margin-top: 2rem;
     margin-bottom: 3rem;
     display: flex;
@@ -133,18 +98,16 @@ section.title div.title__container h2.title__bio {
     font-weight: 700;
     line-height: 3.5rem;
     color: #fff;
-
-
 }
 
-section.title  div.title__container h3.title__subsection {
+section.title div.title__container h3.title__subsection {
     width: 50%;
     color: #fff;
     margin-left: 9rem;
-  
-
+    font-weight: 100;
 }
-section.title  div.title__container ul.title__network {
+
+section.title div.title__container ul.title__network {
     display: flex;
     justify-content: space-between;
     margin-top: 4rem;
@@ -155,22 +118,20 @@ section.title  div.title__container ul.title__network {
     color: #fff;
 }
 
-section.title  div.title__container ul.title__network li.title__network__item {
+section.title div.title__container ul.title__network li.title__network__item {
     display: block;
     border-radius: 7px;
     padding: 1.125rem;
     color: #fff;
     text-align: center;
     border: double;
-
 }
 
-
-section.title  div.title__container ul.title__network li.title__network__item a {
+section.title div.title__container ul.title__network li.title__network__item a {
     color: #fff;
 }
 
-section.title  div.title__container ul.title__network li.title__network__item a img {
+section.title div.title__container ul.title__network li.title__network__item a img {
     background-color: #fff;
 }
 
@@ -182,8 +143,6 @@ section.about {
     background-color: var(--color-fondo-azul);
 }
 
-
-/*Container Sección About*/
 section.about div.about__container {
     text-align: center;
     width: 50%;
@@ -194,28 +153,23 @@ section.about h3.about__title {
     font-size: 2rem;
 }
 
-/*textos seccion about*/
 section.about div.about__container p {
     font-weight: 400;
     font-size: 1rem;
     line-height: 1.5rem;
 }
 
-/*Seccion Skills tamaño*/
+/*Seccion Skills*/
+
 section.skills {
-    
     margin: 4rem 9rem;
-   
 }
 
-/*Titulo de la Seccion*/
 section.skills h3.skills__title {
     font-size: 2rem;
     text-align: center;
-
 }
 
-/*Alineacion de iconos*/
 section.skills div.skills__line {
     display: flex;
     flex-wrap: wrap;
@@ -223,10 +177,9 @@ section.skills div.skills__line {
     width: 100%;
 }
 
-/*Cajas Skills*/
 section.skills div.skills__box {
     border-radius: 1rem;
-box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -238,7 +191,6 @@ box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
     height: 10rem;
 
 }
-
 
 section.skills div.skills__box ul {
     margin: 0;
@@ -256,14 +208,12 @@ section.hobbies {
 
 }
 
-/*Titulo de la Seccion*/
 section.hobbies h3.hobbies__title {
     font-size: 2rem;
     text-align: center;
 
 }
 
-/*Alineacion de iconos*/
 section.hobbies div.hobbies__line {
     display: flex;
     flex-wrap: wrap;
@@ -271,11 +221,9 @@ section.hobbies div.hobbies__line {
     width: 100%;
 }
 
-/*Cajas Skills*/
 section.hobbies div.hobbies__box {
     border-radius: 1rem;
-box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
-    
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -297,58 +245,39 @@ section.hobbies div.hobbies__box ul {
     color: var(--color-titulos);
 }
 
-
-
 /* Experiencia Académica*/
 
 section.academic {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-
     padding: 1rem;
-
-
-
     background-color: var(--color-fondo-azul);
-
 }
 
-/* Titulo de la seccion*/
 section.academic h2.academic__title {
     font-size: 1.8rem;
     text-align: center;
-
 }
 
-/* Posicion de la seccion*/
 section.academic div.academic__courses {
-    
     width: 100%;
     display: flex;
     justify-content: space-around;
-
 }
 
 section.academic div.academic__courses__box {
-
     margin: 0 rem;
-
 }
 
 section.academic div.academic__courses__box ul {
-    
     margin: 0rem;
     padding: 0rem;
     width: 25rem;
-
 }
 
 section.academic div.academic__courses__box ul li {
     display: flex;
-
-
-
 }
 
 div.academic__courses__box ul li.academic__courses__item__img {
@@ -356,15 +285,66 @@ div.academic__courses__box ul li.academic__courses__item__img {
     display: flex;
     background-color: var(--color-cajas);
     padding: 30%;
-
 }
 
-div.academic__courses__box ul li.academic__courses__item__title{
+div.academic__courses__box ul li.academic__courses__item__title {
     justify-content: center;
 }
-div.academic__courses__box ul li.academic__courses__item__subtitle{
+
+div.academic__courses__box ul li.academic__courses__item__subtitle {
     justify-content: center;
 }
+
+/*certificacion*/
+
+section.certificacion {
+    background-color: var(--color-fondo-azul);
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+}
+
+section.certificacion h2{
+    font-size: 1.8rem;
+    text-align: center;
+}
+
+section.certificacion div.gallery__box {
+    position: relative;
+  }
+  
+  section.certificacion div.gallery__box div.gallery-container {
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth; /* opcional, agrega animación al desplazamiento */
+    -webkit-overflow-scrolling: touch; /* opcional, mejora el desplazamiento en dispositivos móviles */
+  }
+  
+  section.certificacion div.gallery__box div.gallery-container img {
+    width: 100%;
+    height: auto;
+    margin: 2rem;
+  }
+  
+  .prev-btn, .next-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: transparent;
+    border: none;
+    font-size: 2em;
+    cursor: pointer;
+  }
+  
+  .prev-btn {
+    left: 0;
+  }
+  
+  .next-btn {
+    right: 0;
+  }
+  
+  /*fin certificacion*/
 
 /* experiencia*/
 
@@ -376,49 +356,39 @@ section.experience h2.experience__section__title {
 }
 
 section.experience div.experience__box {
-
     display: flex;
     margin: 0rem 5rem;
-
 }
 
 
 
 section.experience div.experience__box img.experience__img {
-border-radius: 1rem;
-box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    border-radius: 1rem;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
     margin: 1.5rem;
-
 }
+
 section.experience div.experience__box1 img.experience__img {
     border-radius: 1rem;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
-        margin: 1.5rem;
-    
-    }
+    margin: 1.5rem;
+}
 
 div.experience__box div.experience__info {
 
     margin-bottom: 2rem;
     padding: 9rem 2rem;
-
 }
 
 div.experience__info h2.experience__title {
-
     font-size: 1.5rem;
-
 
 }
 
 div.experience__info h3.experience__text {
-
     color: var(--color-titulos);
-
     font-size: 1rem;
-
 }
-
 
 div.experience__info div.experience__description span.experience__repo a button.experiencia__botao--repo {
     margin: 0.2rem;
@@ -427,77 +397,59 @@ div.experience__info div.experience__description span.experience__repo a button.
     height: 3.3rem;
     border-color: var(--azul-botones);
     color: var(--azul-botones);
-
 }
 
 div.experience__info div.experience__description span.experience__demo a button.experience__botao--demo {
     background-color: var(--azul-botones);
-    border-radius: 0;
+    border-radius: 7px;
     width: 7rem;
     height: 3.3rem;
     border-color: var(--azul-botones);
     color: white;
-
 }
 
-
 /*experiencia 2*/
+
 section.experience div.experience__box1 {
     flex-direction: row-reverse;
     display: flex;
     margin: 0rem 5rem;
-
 }
 
-
-
 section.experience div.experience__box1 img.experience__img {
-
     margin: 1.5rem;
-
 }
 
 div.experience__box1 div.experience__info {
-
     margin-bottom: 2rem;
     padding: 9rem 2rem;
-
 }
 
 div.experience__info h2.experience__title {
-
     font-size: 1.5rem;
-
-
 }
 
 div.experience__info h3.experience__text {
-
     color: var(--color-titulos);
-
     font-size: 1rem;
-
 }
-
 
 div.experience__info div.experience__description span.experience__repo a button.experiencia__botao--repo {
     margin: 0.2rem;
-    border-radius: 0;
+    border-radius: 7px;
     width: 7rem;
     height: 3.3rem;
     border-color: var(--azul-botones);
     color: var(--azul-botones);
-
 }
 
 div.experience__info div.experience__description span.experience__demo a button.experience__botao--demo {
     background-color: var(--azul-botones);
-    border-radius: 0;
+    border-radius: 7p;
     width: 7rem;
     height: 3.3rem;
     border-color: var(--azul-botones);
     color: white;
-
 }
 
 /*Contacto*/
@@ -506,34 +458,25 @@ section.formcontato {
     width: 100%;
     align-items: center;
     background-color: var(--color-fondo-azul);
-
 }
 
 section.formcontato div.formcontato__contacto {
-
     display: flex;
-
     padding: 8rem 20rem;
 }
 
 section.formcontato div img.formcontato__img {
-
     width: 24rem;
     height: 38rem;
-
 }
 
 section.formcontato div.formcontato__text {
-
     margin-left: 2rem;
-
 }
 
 section.formcontato div.formcontato__text h2 {
-
     margin: 0;
     font-size: 2.5rem;
-
 }
 
 div.formcontato__text h3.formcontato__subtext {
@@ -547,21 +490,23 @@ div.formcontato__text form.formcontato__form {
 }
 
 div.formcontato__text form.formcontato__form input {
-
+    border-radius: 7px;
     border: none;
     height: 4rem;
     margin-bottom: 1.5rem;
 }
 
 form.formcontato__form textarea.formcontato__textarea {
+    border-radius: 7px;
     border: none;
     height: 7rem;
     margin-bottom: 1.5rem;
 }
 
 form.formcontato__form button.formcontato__botao {
+    border-radius: 7px;
     background-color: var(--azul-botones);
-    border-radius: 0;
+
     width: 8rem;
     height: 3.3rem;
     border-color: var(--azul-botones);
@@ -617,6 +562,8 @@ form.formcontato__form button.formcontato__botao {
     text-align: center;
 }
 
+/*boton volver al principio*/
+
 .btn-back-to-top {
     position: fixed;
     bottom: 20px;
@@ -652,108 +599,112 @@ section.footer {
     /*Sección Menu*/
     section.menu {
         margin: 0;
+        padding: 0;
     }
 
- 
+
 
     section.menu nav ul.menu__list {
         margin-left: 5rem;
         width: 35rem;
-        font-size: 15px;
+        font-size: 1.2rem;
+        font-weight: 400;
     }
 
     section.title {
         position: relative;
         z-index: 1;
-        
+
         display: flex;
         height: 26rem;
-        
-        }
-        section.title::before {
-           
-            content: '';
-            display: block;
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-image: url(./assets/img-programacion.jpg);
-            background-size:cover;
-            filter: brightness(40%); 
-            background-repeat: no-repeat;
-            z-index: -1;
-          
-        }
 
-   
+    }
+
+    section.title::before {
+
+        content: '';
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url(./assets/img-programacion.jpg);
+        background-size: cover;
+        filter: brightness(40%);
+        background-repeat: no-repeat;
+        z-index: -1;
+
+    }
+
+
 
     section.title div.title__container {
-      
+
         width: 100%;
         padding: 1rem 1rem 1rem 1rem;
-        
+
     }
 
     section.title div.title__container h2.title__bio {
-        
+
         margin-left: 0;
         margin-top: 2rem;
         margin-bottom: 3rem;
-    text-align: center;
-        
+        text-align: center;
+
         width: 100%;
         font-size: 2rem;
-        font-weight:0px;
+        font-weight: 0px;
         line-height: 2rem;
         color: #fff;
-    
-    
+
+
     }
 
-    section.title  div.title__container h3.title__subsection {
-            width: 100%;
-            color: #fff;
-            margin-left:0rem;
-            text-align: center;
-           
-          
-        
-        }
-        section.title  div.title__container ul.title__network {
-            display: flex;
-            justify-content:ce;
-            margin-top: 4rem;
-            margin-left: 2.5rem;
-            width: 80%;
-            font-style: normal;
-            line-height: 0.8rem;
-            color: #fff;
-          
-           
-        }
-        
-        section.title  div.title__container ul.title__network li.title__network__item {
-            display: block;
-            border-radius: 7px;
-            padding: 1.5rem;
-            color: #fff;
-            text-align: center;
-            border: double;
-            justify-content: center;
-            margin: 0.5rem 0.5rem 0.5rem 0.5rem;
-        
-        }
-        
-        
-        section.title  div.title__container ul.title__network li.title__network__item a {
-            color: #fff;
-            font-size: 0.8rem;
-           
-        }
+    section.title div.title__container h3.title__subsection {
+        width: 100%;
+        color: #fff;
+        margin-left: 0rem;
+        text-align: center;
 
-    
+
+
+    }
+
+    section.title div.title__container ul.title__network {
+        display: flex;
+        justify-content: ce;
+        margin-top: 4rem;
+        margin-left: 2.5rem;
+        width: 80%;
+        font-style: normal;
+        line-height: 0.8rem;
+        color: #fff;
+
+
+    }
+
+    section.title div.title__container ul.title__network li.title__network__item {
+        display: block;
+        border-radius: 7px;
+        padding: 1.5rem;
+        color: #fff;
+        text-align: center;
+        border: double;
+        justify-content: center;
+        margin: 0.5rem 0.5rem 0.5rem 0.5rem;
+
+    }
+
+
+    section.title div.title__container ul.title__network li.title__network__item a {
+        color: #fff;
+        font-size: 0.8rem;
+
+    }
+
+
 
     section.about h3.about__title {
         font-size: 2rem;
@@ -778,6 +729,7 @@ section.footer {
         text-align: center;
     }
 
+
     section.experience div.experience__box {
 
         display: flex;
@@ -785,9 +737,19 @@ section.footer {
 
     }
 
+    div.experience__box div.experience__info {
+        margin-bottom: 2rem;
+        padding: 0rem 2rem;
+    }
+
     section.experience div.experience__box1 {
         display: flex;
         flex-direction: column;
+    }
+
+    div.experience__box1 div.experience__info {
+        margin-bottom: 2rem;
+        padding: 0rem 2rem;
     }
 
     section.formcontato div.formcontato__contacto {
@@ -822,107 +784,113 @@ section.footer {
 
     }
 
+    section.menu nav ul.menu__list {
+        width: 100%;
+        margin-top: 0;
+        margin-left: 0;
+        background-color: var(--color-fondo-azul);
+        border-radius: 0 0 10px 10px;
+        box-shadow: var(--shadow);
+        padding: 0;
+        justify-content: space-around;
+        align-items: center;
+        height: 3rem;
+        margin-bottom: 1rem;
+        font-weight: 400;
+    }
+
     section.title {
         position: relative;
         z-index: 1;
-        
+
         display: flex;
         height: 26rem;
-        
-        }
-        section.title::before {
-           
-            content: '';
-            display: block;
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-image: url(./assets/img-programacion.jpg);
-            background-size:cover;
-            filter: brightness(40%); 
-            background-repeat: no-repeat;
-            z-index: -1;
-          
-        }
 
-        section.title  div.title__container {
-           
-            width: 100%;
-            padding: 1rem 1rem 1rem 1rem;
-            
-        }
+    }
 
-        section.title div.title__container h2.title__bio {
-        
-            margin-left: 0;
-            margin-top: 2rem;
-            margin-bottom: 3rem;
+    section.title::before {
+
+        content: '';
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url(./assets/img-programacion.jpg);
+        background-size: cover;
+        filter: brightness(40%);
+        background-repeat: no-repeat;
+        z-index: -1;
+
+    }
+
+    section.title div.title__container {
+
+        width: 100%;
+        padding: 1rem 1rem 1rem 1rem;
+
+    }
+
+    section.title div.title__container h2.title__bio {
+
+        margin-left: 0;
+        margin-top: 2rem;
+        margin-bottom: 3rem;
         text-align: center;
-            
-            width: 100%;
-            font-size: 2rem;
-            font-weight:0px;
-            line-height: 2rem;
-            color: #fff;
-        
-        
-        }
-        
-        section.title  div.title__container h3.title__subsection {
-            width: 100%;
-            color: #fff;
-            margin-left:0rem;
-            text-align: center;
-           
-          
-        
-        }
-        section.title  div.title__container ul.title__network {
-            display: flex;
-            justify-content:ce;
-            margin-top: 4rem;
-            margin-left: 0rem;
-            width: 80%;
-            font-style: normal;
-            line-height: 0.8rem;
-            color: #fff;
-          
-           
-        }
-        
-        section.title  div.title__container ul.title__network li.title__network__item {
-            display: flex;
-            border-radius: 7px;
-            padding: 0.8rem;
-            color: #fff;
-            text-align: center;
-            border: none;
-            justify-content: center;
-        
-        }
-        
-        
-        section.title  div.title__container ul.title__network li.title__network__item a {
-            color: #fff;
-            font-size: 0.8rem;
-           
-        }
+
+        width: 100%;
+        font-size: 2rem;
+        font-weight: 100;
+        line-height: 2rem;
+        color: #fff;
+
+
+    }
+
+    section.title div.title__container h3.title__subsection {
+        width: 100%;
+        color: #fff;
+        margin-left: 0rem;
+        text-align: center;
+        font-weight: 100;
+    }
+
+    section.title div.title__container ul.title__network {
+        display: flex;
+        justify-content: center;
+        margin-top: 4rem;
+        margin-left: 0rem;
+        width: 80%;
+        font-style: normal;
+        line-height: 0.8rem;
+        color: #fff;
+        font-weight: 100;
+    }
+
+    section.title div.title__container ul.title__network li.title__network__item {
+        border-radius: 7px;
+        padding: 0.5rem;
+        margin: 0.2rem;
+        color: #fff;
+        text-align: center;
+        border: double;
+    }
+
+    section.title div.title__container ul.title__network li.title__network__item img {
+        display: none;
+    }
+
+    section.title div.title__container ul.title__network li.title__network__item a {
+        color: #fff;
+        font-size: 0.8rem;
+    }
 
     section.about div.about__container {
         width: 100%;
         margin-left: 0;
         margin-bottom: 2rem;
         text-align: center;
-    }
-
-    section.menu nav ul.menu__list {
-        width: 100%;
-        margin-left: 0;
-        justify-content: space-around;
-        padding: 0;
-        margin-top: 2rem;
     }
 
     section.skills {
@@ -958,8 +926,6 @@ section.footer {
         text-align: center;
     }
 
-   
-
     section.title div.title__container h2.academic__title {
         text-align: center;
     }
@@ -972,9 +938,13 @@ section.footer {
         align-content: center;
     }
 
-    div.experience__box div.experience__info {
+    section.experience div.experience__box img.experience__img {
+        margin-bottom: 0;
+    }
 
-        padding: 2rem;
+    div.experience__box div.experience__info {
+        margin-bottom: 0;
+        padding: 0rem 0rem 2rem 2rem;
     }
 
     section.experience div.experience__box1 {
@@ -986,20 +956,25 @@ section.footer {
     }
 
     div.experience__box1 div.experience__info {
-        padding: 2rem;
+        margin-bottom: 0;
+        padding: 0rem 0rem 2rem 2rem;
+    }
+
+    section.experience div.experience__box1 img.experience__img {
+        margin-bottom: 0;
     }
 
     section.formcontato div.formcontato__contacto {
-        
         flex-direction: column;
-        padding: 0rem 1rem 0rem 1rem;
+        padding: 0rem 1rem 1rem 1rem;
     }
-    section.formcontato div.formcontato__contacto div.formcontato--esquerda img.formcontato__img{
-width: 100%;
-      
+
+    section.formcontato div.formcontato__contacto div.formcontato--esquerda img.formcontato__img {
+        width: 100%;
     }
 
     section.formcontato div.formcontato__text {
+        border-radius: 7px;
         margin-left: 0;
     }
 
